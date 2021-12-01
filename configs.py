@@ -8,7 +8,7 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH", "3022e575059ce68696f4fa4120ae33a2")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "2122160445:AAENV5wX9Eei3nACUGYmzMeSPJ2YSY-wr_w")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "bratflix_storage_bot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001750092497"))
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001312930387"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER","879778871"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://lilbrat:lilbrat@cluster0.c9kkp.mongodb.net/myFirstDatabase?retryWrites=true")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
