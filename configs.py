@@ -4,20 +4,20 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL"))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER"))
-	DATABASE_URL = os.environ.get("DATABASE_URL")
+	API_ID = int(os.environ.get("API_ID", "2557747"))
+	API_HASH = os.environ.get("API_HASH", "3022e575059ce68696f4fa4120ae33a2")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "2122160445:AAENV5wX9Eei3nACUGYmzMeSPJ2YSY-wr_w")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "bratflix_storage_bot ")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001750092497"))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER","879778871"))
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://lilbrat:lilbrat@cluster0.c9kkp.mongodb.net/myFirstDatabase?retryWrites=true")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
-	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
+	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", False))
 	ABOUT_BOT_TEXT = f"""
 This is Permanent Files Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
